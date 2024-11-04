@@ -1,0 +1,409 @@
+
+:root {
+    --col-k: #555333;
+    --col-w: #fff;
+    --col-b: #222;
+    --col-o: #F47B3D;
+    --font-h: "Libre Baskerville", serif;
+    --font-t: "Poppins", serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;    
+}
+
+.main-block {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 218px 0 227px;
+    background-image: url(../image/grand-hotel-tremezzo-facade-ruben-ortiz-new-new\ 1\ \(1\)\ \(1\).png);
+}
+
+.main-block::after {
+    position: absolute;
+    content: '';
+    background-color: #5042298c;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.main-block-cont {
+    width: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.main-header {
+    color: var(--col-w);
+    font-family: var(--font-h);
+    font-weight: 200;
+    font-size: 65px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-family:var(--font-t);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.main-block .description {
+    color: var(--col-w);
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.main-button {
+    font-family: var(--font-t);
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--col-w);
+    background: var(--col-o);
+    padding: 14px 60px;
+    text-transform: uppercase;
+    border: none;
+}
+
+/*about*/
+
+.about .container {
+    text-align: center;
+}
+
+.subheader{
+    color: var(--col-k);
+    font-family: var(--font-h)
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 25px;
+    margin-top:0;
+    text-transform: uppercase;
+}
+
+.about img{
+    width: 100%;
+}
+
+/*services*/
+
+.services-desc, .gallery-desc {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.services-desc .subheader{
+    text-transform: uppercase;
+}
+
+.services .description {
+    color: var(--col-b);
+}
+
+.services-blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services-block {
+    flex-basis: calc(45% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    min-height: 300px;
+}
+
+.services-block:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: background: var(var(--col-k));
+    background: linear-gradient(0deg, rgba(85,83,51,1) 0%, rgba(85,83,51,1) 13%, rgba(244,123,61,0) 77%);
+}
+
+.services-block:nth-child(1) {
+    background-image: url(../image/grand_hotel_tremezzo-t_spa-ruben-0g5a1756.webp);
+}
+
+.services-block:nth-child(3) {
+    background-image: url(../image/grand_hotel_tremezzo-da_giacomo_al_lago-ruben-0g5a1957.webp);
+}
+
+.services-block:nth-child(4) {
+    background-image: url(../image/p21-3.jpg);
+}
+
+.services-block:nth-child(2) {
+    background-image: url(../image/passalacqua-view.webp);
+}
+
+.services-header {
+    font-family: var(--font-h);
+    color: var(--col-w);
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.services-text {
+    font-family: var(--font-t);
+    color: var(--col-w);
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.services-btn {
+    font-family: var(--font-t);
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--col-w);
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.services-btn:after {
+    content: '→';
+    position: absolute;
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+/*bxSlider*/
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    margin: 0 auto;
+}
+
+/*apart*/
+
+.appart-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.appart-block-flex {
+    width: 48% ;
+}
+
+.appart-img img {
+    width: 49%;
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: var(--col-k);
+}
+
+.footer p {
+    color: var(--col-w);
+    margin: 0;
+}
+
+.footer-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer-block-1 {
+    width: 40%;
+    font-family: var(--font-h);
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.footer-block-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 80px;
+    justify-items: end;
+}
+
+.footer-block-2 a{
+    color: var(--col-w);
+    text-decoration: none;
+    font-family: var(--font-t);
+    font-size: 16px;
+}
+
+/*********************************/
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1150px;
+    } 
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1040px;
+    }
+    .main-block-cont {
+        width: 70%;
+    }
+    .block-wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .services-block {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .container {
+        max-width: 800px;
+    } 
+    .img1{
+        display: none;
+    }
+    .appart-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .container {
+        max-width: 600px;
+    }
+    .main-block {
+        padding: 180px 0 150px;
+    }
+    .main-block-cont {
+        width: 100%;
+    }
+    .main-header {
+        font-size: 45px;
+    }
+    .subheader {
+        font-size: 32px;
+    }
+    .services-block {
+        flex-basis: 100%;
+        min-height: 300px;
+    }
+    .footer-block-1, .footer-block-2 {
+        width: 100%;
+    }
+    .footer-block-2 {
+        justify-items: flex-start;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .container {
+        max-width: 500px;
+    }  
+    .appart-block {
+        flex-direction: column;
+    }  
+    .img1{
+        display: inline-block;
+    }
+    .appart-block-flex {
+        width: 100%;
+    }
+    .appart-img img {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        max-width: 430px;
+    }  
+    .description {
+        font-size: 18px;
+    }
+    .main-button {
+    font-size: 18px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        max-width: 380px;
+    } 
+    .block-wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }  
+    .main-header {
+        font-size: 38px;
+    }
+    .subheader {
+        font-size: 28px;
+    }
+    .services-block {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        max-width: 320px;
+    } 
+    .main-header {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+

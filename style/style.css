@@ -83,6 +83,7 @@ dd {
 .main-block .description {
     color: var(--col-w);
     margin-top: 20px;
+}
 
 .main-button {
     font-family: var(--font-t);

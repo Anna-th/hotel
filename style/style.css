@@ -83,8 +83,6 @@ dd {
 .main-block .description {
     color: var(--col-w);
     margin-top: 20px;
-    margin-bottom: 45px;
-}
 
 .main-button {
     font-family: var(--font-t);
@@ -97,6 +95,7 @@ dd {
     padding: 14px 60px;
     text-transform: uppercase;
     border: none;
+    margin-top: 45px;
 }
 
 /*about*/
